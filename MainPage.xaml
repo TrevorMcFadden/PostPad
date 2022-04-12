@@ -1,0 +1,50 @@
+﻿<Page
+    x:Class="PostPad.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PostPad"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="PostPadGrid">
+        <Grid.Background>
+            <AcrylicBrush BackgroundSource="HostBackdrop" TintOpacity="0.6" Opacity="0.4" TintColor="#CCEAEAEA" FallbackColor="#CCEAEAEA"/>
+        </Grid.Background>
+        <RichEditBox x:Name="PostPadBox" Margin="0,217,0,60" BorderThickness="0,0,0,0" PlaceholderText="What's on your mind?" Padding="20,20,20,20" IsHandwritingViewEnabled="True">
+            <RichEditBox.Background>
+                <AcrylicBrush BackgroundSource="HostBackdrop" TintOpacity="0.6" Opacity="0.4" TintColor="#CCEAEAEA"/>
+            </RichEditBox.Background>
+        </RichEditBox>
+        <CommandBar x:Name="PostPadCommandBar" Margin="0,177,0,0" Background="#FFFDD23B">
+            <CommandBar.Content>
+                <Grid/>
+            </CommandBar.Content>
+            <AppBarButton x:Name="BoldButton" Icon="Bold" ToolTipService.ToolTip="Bold" VerticalAlignment="Bottom" Label="Bold"/>
+            <AppBarButton x:Name="ItalicButton" Icon="Italic" ToolTipService.ToolTip="Italicize" VerticalAlignment="Bottom" Label="Italicize"/>
+            <AppBarButton x:Name="UnderlineButton" Icon="Underline" ToolTipService.ToolTip="Underline" VerticalAlignment="Bottom" Label="Underline"/>
+            <AppBarButton x:Name="StrikeoutButton" ToolTipService.ToolTip="Strikeout" VerticalAlignment="Bottom" Label="Strikeout">
+                <AppBarButton.Icon>
+                    <FontIcon Glyph="&#xEDE0;"/>
+                </AppBarButton.Icon>
+            </AppBarButton>
+            <AppBarButton x:Name="BulletButton" Icon="Bullets" ToolTipService.ToolTip="Bullet" VerticalAlignment="Bottom" Label="Bullet"/>
+            <AppBarButton x:Name="ImageButton" Icon="Camera" ToolTipService.ToolTip="Place image" VerticalAlignment="Bottom"  Label="Place"/>
+            <AppBarButton x:Name="UndoButton" Icon="Undo" ToolTipService.ToolTip="Undo" VerticalAlignment="Bottom" Label="Undo"/>
+            <AppBarButton x:Name="RedoButton" Icon="Redo" ToolTipService.ToolTip="Redo" VerticalAlignment="Bottom"  Label="Redo"/>
+            <AppBarButton x:Name="SaveButton" Icon="Save" ToolTipService.ToolTip="Save" VerticalAlignment="Bottom"  Label="Save"/>
+            <AppBarButton x:Name="OpenButton" Icon="OpenLocal" VerticalAlignment="Bottom" ToolTipService.ToolTip="Open" Label="Open"/>
+            <AppBarButton x:Name="TrashButton" Icon="Clear" ToolTipService.ToolTip="Clear entry" VerticalAlignment="Bottom"  Label="Clear"/>
+            <AppBarButton x:Name="SetButton" Icon="Import" VerticalAlignment="Bottom" ToolTipService.ToolTip="Get a note" Label="Get"/>
+            <AppBarButton x:Name="EmojiButton" Icon="Emoji" VerticalAlignment="Bottom" ToolTipService.ToolTip="Insert emoji" Label="Emoji"/>
+        </CommandBar>
+        <ListBox x:Name="PostPadListbox" Height="177" VerticalAlignment="Top" Background="#FFFFF2C4" ContextFlyout="{Binding ElementName=CustomFO}">
+            <ListBoxItem x:Name="NotesHeader" Content="So far, you have no notes. ☁️😌" FontSize="24" IsEnabled="False"/>
+        </ListBox>
+        <AppBarButton x:Name="DeleteNoteButton" Icon="Delete" Margin="55,0,0,10" VerticalAlignment="Bottom" Width="40" Height="40" ToolTipService.ToolTip="Delete note" CornerRadius="20,20,20,20" TabIndex="1"/>
+        <AppBarButton x:Name="PostButton" Icon="Send" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="40" Height="40" ToolTipService.ToolTip="Post note" CornerRadius="20,20,20,20" Background="{x:Null}" TabIndex="0"/>
+        <TextBox x:Name="PrayerBox" HorizontalAlignment="Right" Margin="0,0,10,10" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" Height="40" PlaceholderText="What would you like prayer for?" CornerRadius="20,20,20,20" BorderThickness="0,0,0,0" Padding="10,8,8,8"/>
+
+    </Grid>
+</Page>

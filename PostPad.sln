@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "PostPad", "PostPad.vbproj", "{EB036047-5863-4543-87F4-27441CDC5496}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB036047-5863-4543-87F4-27441CDC5496}.Debug|ARM.ActiveCfg = Debug|ARM
+		{EB036047-5863-4543-87F4-27441CDC5496}.Debug|ARM.Build.0 = Debug|ARM
+		{EB036047-5863-4543-87F4-27441CDC5496}.Debug|ARM.Deploy.0 = Debug|ARM
+		{EB036047-5863-4543-87F4-27441CDC5496}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{EB036047-5863-4543-87F4-27441CDC5496}.Debug|ARM64.Build.0 = Debug|ARM64
+		{EB036047-5863-4543-87F4-27441CDC5496}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{EB036047-5863-4543-87F4-27441CDC5496}.Debug|x64.ActiveCfg = Debug|x64
+		{EB036047-5863-4543-87F4-27441CDC5496}.Debug|x64.Build.0 = Debug|x64
+		{EB036047-5863-4543-87F4-27441CDC5496}.Debug|x64.Deploy.0 = Debug|x64
+		{EB036047-5863-4543-87F4-27441CDC5496}.Debug|x86.ActiveCfg = Debug|x86
+		{EB036047-5863-4543-87F4-27441CDC5496}.Debug|x86.Build.0 = Debug|x86
+		{EB036047-5863-4543-87F4-27441CDC5496}.Debug|x86.Deploy.0 = Debug|x86
+		{EB036047-5863-4543-87F4-27441CDC5496}.Release|ARM.ActiveCfg = Release|ARM
+		{EB036047-5863-4543-87F4-27441CDC5496}.Release|ARM.Build.0 = Release|ARM
+		{EB036047-5863-4543-87F4-27441CDC5496}.Release|ARM.Deploy.0 = Release|ARM
+		{EB036047-5863-4543-87F4-27441CDC5496}.Release|ARM64.ActiveCfg = Release|ARM64
+		{EB036047-5863-4543-87F4-27441CDC5496}.Release|ARM64.Build.0 = Release|ARM64
+		{EB036047-5863-4543-87F4-27441CDC5496}.Release|ARM64.Deploy.0 = Release|ARM64
+		{EB036047-5863-4543-87F4-27441CDC5496}.Release|x64.ActiveCfg = Release|x64
+		{EB036047-5863-4543-87F4-27441CDC5496}.Release|x64.Build.0 = Release|x64
+		{EB036047-5863-4543-87F4-27441CDC5496}.Release|x64.Deploy.0 = Release|x64
+		{EB036047-5863-4543-87F4-27441CDC5496}.Release|x86.ActiveCfg = Release|x86
+		{EB036047-5863-4543-87F4-27441CDC5496}.Release|x86.Build.0 = Release|x86
+		{EB036047-5863-4543-87F4-27441CDC5496}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {87221187-C647-478B-826B-1AFB9B07FC29}
+	EndGlobalSection
+EndGlobal
